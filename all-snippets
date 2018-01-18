@@ -1,0 +1,286 @@
+var price = 15.00; // price of the hammer
+var money = 20.00; // how much money I have
+if(money >= price) {
+	console.log("buy the hammer");
+}
+else {
+	console.log("don't buy the hammer");
+}
+
+// musical group type
+var musicians = 2;
+
+if(musicians <= 0) {
+    console.log("not a group");
+}
+else if(musicians === 1) {
+    console.log("solo");
+}
+else if(musicians === 2) {
+    console.log("duet");
+}
+else if(musicians === 3) {
+    console.log("trio");
+}
+else if(musicians === 4) {
+    console.log("quartet");
+}
+else {
+    console.log("this is a large group");
+}
+
+
+// murder mystery
+var room = "dining room";
+var suspect = "Mr. Parkes";
+
+var weapon = "";
+var solved = false;
+
+if (room === "dining room" && suspect === "Mr. Parkes") {
+		weapon = "knife";
+		solved = true;
+} else if (room === "gallery" && suspect === "Ms. Van Cleve") {
+		weapon = "trophy";
+		solved = true;
+} else if (room === "billiards room" && suspect === "Mrs. Sparr") {
+		weapon = "pool stick";
+		solved = true;
+} else {
+		room = "ballroom";
+		suspect = "Mr. Kalehoff";
+		weapon = "poison";
+		solved = true;
+}
+
+if (solved) {
+	console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+}
+
+
+// Checking you balance at the ATM
+var balance = 325.00;
+var checkBalance = true;
+var isActive = false;
+
+if (checkBalance === true) {
+  if (isActive === true && balance > 0) {
+    console.log("Your balance is $" + balance + ".");
+  } else if (!isActive) {
+    console.log("Your account is no longer active.");
+  } else if (balance === 0) {
+    console.log("Your account is empty.");
+  } else {
+    console.log("Your balance is negative. Please contact bank.");
+  }
+} else {
+  console.log("Thank you. Have a nice day!");
+}
+
+// Ice cream
+var flavor = "strawberry";
+var vessel = "cone";
+var toppings = "cookies";
+
+if((flavor === "vanilla" || flavor === "chocolate") && (vessel === "cone" || vessel === "bowl") && (toppings === "sprinkles" || toppings === "peanuts")) {
+	console.log("I'd like two scoops of " + flavor + " ice cream in a " + vessel + "with " + toppings + ".");
+		}
+
+// What do I wear?
+var shirtWidth = 23;
+var shirtLength = 30;
+var shirtSleeve = 8.71;
+
+if((shirtWidth >= 18 && shirtWidth < 20) && (shirtLength >= 28 && shirtLength < 29) && (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
+	console.log("S");
+}
+else if((shirtWidth >= 20 && shirtWidth < 22) && (shirtLength >= 29 && shirtLength < 30) && (shirtSleeve >= 8.38 && shirtSleeve < 8.63)) {
+	console.log("M");
+}
+else if((shirtWidth >= 22 && shirtWidth < 24) && (shirtLength >= 30 && shirtLength < 31) && (shirtSleeve >= 8.63 && shirtSleeve < 8.88)) {
+	console.log("L");
+}
+else if((shirtWidth >= 24 && shirtWidth < 26) && (shirtLength >= 31 && shirtLength < 33) && (shirtSleeve >= 8.88 && shirtSleeve < 9.63)) {
+	console.log("XL");
+}
+else if((shirtWidth >= 26 && shirtWidth < 28) && (shirtLength >= 33 && shirtLength < 34) && (shirtSleeve >= 9.63 && shirtSleeve < 10.13)) {
+	console.log("2XL");
+}
+else if((shirtWidth >= 28) && (shirtLength >= 34) && (shirtSleeve >= 10.13)) {
+	console.log("3XL");
+}
+else {
+	console.log("N/A");
+}
+
+
+// Navigating the food chain
+var eatsPlants = false;
+var eatsAnimals = true;
+
+var category = eatsPlants && eatsAnimals ? "omnivore" :
+								eatsPlants ? "herbivore" :
+console.log(category);
+
+
+// Back to school
+var education = "no high school diploma";
+
+// set the value of this based on a person's education
+var salary;
+
+switch (education) {
+	case "no high school diploma":
+		salary = 25636;
+		console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
+		break;
+	case "a high school diploma":
+		salary = 35256;
+		console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
+		break;
+	case "an Associate's degree":
+		salary = 41496;
+		console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
+		break;
+	case "a Bachelor's degree":
+		salary = 59124;
+		console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
+		break;
+	case "a Master's degree":
+		salary = 69732;
+		console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
+		break;
+	case "a Professional degree":
+		salary = 89960;
+		console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
+		break;
+	case "a Doctoral degree":
+		salary = 84396;
+		console.log("In 2015, a person with " + education + " earned an average of $" + salary.toLocaleString("en-US") + "/year.");
+}
+
+
+var x = 1;
+
+while (x <= 10000) {
+	console.log(x + " mississipi");
+	x += 1;
+}
+
+
+//fizzbuzz
+var x = 1;
+while (x <= 100) {
+	if(x % 3 === 0 ) {
+		if(x % 5 === 0) {
+			console.log("FizzBuzz");
+		}
+		else {
+			console.log("Fizz");
+		}
+	} else if(x % 5 === 0) {
+		console.log("Buzz");
+	}
+	else {
+		console.log(x);
+	}
+	x += 1;
+}
+
+//JuliaJames
+var x = 1;
+while (x <= 20) {
+	if(x % 3 === 0 ) {
+		if(x % 5 === 0) {
+			console.log("JuliaJames");
+		}
+		else {
+			console.log("Julia");
+		}
+	} else if(x % 5 === 0) {
+		console.log("James");
+	}
+	else {
+		console.log(x);
+	}
+	x += 1;
+}
+
+// Bottles of juice
+var num = 99;
+
+while (num > 0) {
+	if(num > 1) {
+		console.log(num + " bottles of juice on the wall! " + num + " bottles of juice! Take one down, pass it around... " + (num - 1) + " bottles of juice on the wall!");
+	}
+	else if(num === 1){
+		console.log(num + " bottle of juice on the wall! " + num + " bottle of juice! Take one down, pass it around... " + (num - 1) + " bottles of juice on the wall!");
+	}
+	num -= 1;
+}
+
+
+// Countdown
+var sec = 60
+while (sec >= 0) {
+		switch (sec) {
+			case 50:
+			console.log("Orbiter transfers from ground to internal power");
+			break;
+			case 31:
+			console.log("Ground launch sequencer is go for auto sequence start");
+			break;
+			case 16:
+			console.log("Activate launch pad sound suppression system");
+			break;
+			case 10:
+			console.log("Activate main engine hydrogen burnoff system");
+			break;
+			case 6:
+			console.log("Main engine start");
+			break;
+			case 0:
+			console.log("Solid rocket booster ignition and liftoff!");
+			break;
+		}
+	console.log("T-" + sec + " seconds");
+	sec -= 1;
+}
+
+
+// Find my seat
+for(var rowNum = 0; rowNum < 26; rowNum++) {
+	for(var seatNum = 0; seatNum < 100; seatNum++) {
+	console.log(rowNum + "-" + seatNum);
+	}
+}
+
+// Say Hello Function
+function sayHello() {
+	var message = "Hello";
+	return message;
+}
+
+/*
+ Reverse String Function
+		Steps:
+			. Starting from the last, take each character of the string
+			. Add each character fetched to another string so that the positions are reversed
+*/
+//The reverseMe variable is a parameter to hold the string to be reversed
+function reverseString(reverseMe) { 
+// Assign a value to a variable to contain the reversed string
+	var reversed = "";
+/*
+		- You gotta cycle through reverseMe using the positional indexes of the characters
+		- You don't know how many characters beforehand so refer to the index using the length. The index of the last character is (length - 1)
+			. Assign the index position of the last character to variable 'c'
+			. Decrement c by 1 so that the length of the string is decreased by 1, changing the last character to be added to 'reversed'
+			. Loop through till c === 0
+*/
+	for(var c = reverseMe.length - 1; c >= 0; c--) {
+		// 3. Add the character at the current index to the 'reversed' variable
+		reversed += reverseMe[c];
+	}
+	return reversed;
+}
