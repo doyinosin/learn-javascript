@@ -260,27 +260,3 @@ function sayHello() {
 	var message = "Hello";
 	return message;
 }
-
-/*
- Reverse String Function
-		Steps:
-			. Starting from the last, take each character of the string
-			. Add each character fetched to another string so that the positions are reversed
-*/
-//The reverseMe variable is a parameter to hold the string to be reversed
-function reverseString(reverseMe) { 
-// Assign a value to a variable to contain the reversed string
-	var reversed = "";
-/*
-		- You gotta cycle through reverseMe using the positional indexes of the characters
-		- You don't know how many characters beforehand so refer to the index using the length. The index of the last character is (length - 1)
-			. Assign the index position of the last character to variable 'c'
-			. Decrement c by 1 so that the length of the string is decreased by 1, changing the last character to be added to 'reversed'
-			. Loop through till c === 0
-*/
-	for(var c = reverseMe.length - 1; c >= 0; c--) {
-		// 3. Add the character at the current index to the 'reversed' variable
-		reversed += reverseMe[c];
-	}
-	return reversed;
-}
